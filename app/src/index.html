@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websockets</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="/app/dist/output.css" rel="stylesheet" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"
+      integrity="sha512-Xm9qbB6Pu06k3PUwPj785dyTl6oHxgsv9nHp7ej7nCpAqGZT3OZpsELuCYX05DdonFpTlBpXMOxjavIAIUwr0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body class="bg-slate-600 text-white">
+    <form class="flex justify-center gap-1">
+      <input
+        class="border-[10px] text-black rounded-sm p-[10px]"
+        type="text"
+        placeholder="Your message"
+      />
+      <button class="border-[10px] bg-gray-900 rounded-sm p-[10px]">
+        Send
+      </button>
+    </form>
+    <ul class="flex-col justify-center list-none"></ul>
+  </body>
+</html>
